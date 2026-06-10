@@ -1,6 +1,6 @@
 # Zipfy
 
-https://zipfy.dogpawsystems.com/
+<a href="https://zipfy.dogpawsystems.com/" target="_blank">Zipfy</a>
 
 <p align="center">
   <img src="public/screenshot.jpeg" width="800" alt="Zipfy Screenshot">
