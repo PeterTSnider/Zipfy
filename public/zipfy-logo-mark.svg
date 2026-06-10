@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 96" role="img" aria-labelledby="title desc">
+  <title id="title">Zipfy logo mark</title>
+  <desc id="desc">A stylized Zipf curve with descending rank-frequency bars.</desc>
+
+  <defs>
+    <linearGradient id="zipfyPurple" x1="20" y1="18" x2="190" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d8b4fe"/>
+      <stop offset="45%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0.65 0 0 0 0.46
+                0 0.35 0 0 0.18
+                0 0 1 0 0.95
+                0 0 0 0.55 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <g fill="url(#zipfyPurple)" opacity="0.9">
+      <rect x="20" y="36" width="10" height="42" rx="5"/>
+      <rect x="40" y="45" width="10" height="33" rx="5"/>
+      <rect x="60" y="54" width="10" height="24" rx="5"/>
+      <rect x="80" y="61" width="10" height="17" rx="5"/>
+      <rect x="100" y="66" width="10" height="12" rx="5"/>
+      <rect x="120" y="70" width="10" height="8" rx="4"/>
+      <rect x="140" y="73" width="10" height="5" rx="2.5"/>
+    </g>
+
+    <path
+      d="M18 22 C38 31 45 78 82 78 C111 78 121 71 139 71 C161 71 176 76 202 76"
+      fill="none"
+      stroke="url(#zipfyPurple)"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M18 22 C38 31 45 78 82 78 C111 78 121 71 139 71 C161 71 176 76 202 76"
+      fill="none"
+      stroke="#f8f5ff"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.45"
+    />
+  </g>
+</svg>
