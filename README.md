@@ -1,5 +1,7 @@
 # Zipfy
 
+https://zipfy.dogpawsystems.com/
+
 <p align="center">
   <img src="public/screenshot.jpeg" width="800" alt="Zipfy Screenshot">
 </p>
