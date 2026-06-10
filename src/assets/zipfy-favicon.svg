@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0b1020"></rect>
+
+  <path d="M12 52 H54" stroke="white" stroke-width="2"></path>
+  <path d="M12 12 V52" stroke="white" stroke-width="2"></path>
+
+  <rect x="16" y="20" width="4" height="32" rx="1" fill="#b06cff"></rect>
+  <rect x="24" y="26" width="4" height="26" rx="1" fill="#9d7cff"></rect>
+  <rect x="32" y="32" width="4" height="20" rx="1" fill="#8aa1ff"></rect>
+  <rect x="40" y="38" width="4" height="14" rx="1" fill="#72c8ff"></rect>
+  <rect x="48" y="44" width="4" height="8" rx="1" fill="#5de1ff"></rect>
+
+  <path d="M16 18 C24 34, 34 42, 52 46" fill="none" stroke="url(#curve)" stroke-width="3" stroke-linecap="round"></path>
+
+  <defs>
+    <linearGradient id="curve" x1="16" y1="18" x2="52" y2="46">
+      <stop offset="0%" stop-color="#c084fc"></stop>
+      <stop offset="100%" stop-color="#5de1ff"></stop>
+    </linearGradient>
+  </defs>
+</svg>
