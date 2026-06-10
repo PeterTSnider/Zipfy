@@ -1,6 +1,8 @@
 # Zipfy
 
-![Zipfy Screenshot](public/screenshot.jpeg)
+<p align="center">
+  <img src="assets/zipfy-homepage.png" width="800" alt="Zipfy Screenshot">
+</p>
 
 Zipfy is a simple web app that explores one of the most surprising patterns in language and data: **Zipf's Law**.
 
