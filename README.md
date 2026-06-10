@@ -1,5 +1,9 @@
 # Zipfy
 
+<p align="center">
+  <img src="public/screenshot.jpeg" width="800" alt="Zipfy Screenshot">
+</p>
+
 Zipfy is a simple web app that explores one of the most surprising patterns in language and data: **Zipf's Law**.
 
 Paste text or upload a CSV file, and Zipfy will analyze how closely the frequency distribution follows an ideal Zipf curve. It then generates a **Zipfy Score**, summary statistics, and interactive visualizations to help you understand the structure of your data.
