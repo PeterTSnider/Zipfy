@@ -1,78 +1,93 @@
-<<<<<<< HEAD
 # Zipfy
-A fun and interesting tool for learning about Zipf's Law.
-=======
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zipfy is a simple web app that explores one of the most surprising patterns in language and data: **Zipf's Law**.
 
-Currently, two official plugins are available:
+Paste text or upload a CSV file, and Zipfy will analyze how closely the frequency distribution follows an ideal Zipf curve. It then generates a **Zipfy Score**, summary statistics, and interactive visualizations to help you understand the structure of your data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What is Zipf's Law?
 
-## React Compiler
+Zipf's Law describes a pattern commonly found in natural language, where the most frequent word appears roughly twice as often as the second most frequent word, three times as often as the third most frequent word, and so on.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This pattern appears not only in books and articles, but also in many real-world datasets such as:
 
-## Expanding the ESLint configuration
+* Product sales
+* Website traffic
+* City populations
+* Search terms
+* Social media activity
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Text Analysis
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Paste any text and instantly see:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Total and unique word counts
+* Vocabulary statistics
+* Most common words
+* Zipf slope and R² measurements
+* Zipfy Score
+
+### CSV Analysis
+
+Upload a CSV file and select a column to analyze.
+
+Examples:
+
+* Product categories
+* Error codes
+* Customer regions
+* Sales representatives
+* Any repeated categorical data
+
+### Interactive Visualizations
+
+* Standard frequency-rank plot
+* Log-log Zipf plot
+* Actual vs expected Zipf distributions
+* Hover tooltips and frequency inspection
+
+## Zipfy Score
+
+The Zipfy Score is a heuristic score from 0–100 that estimates how closely a distribution matches an ideal Zipf pattern.
+
+The score is based on:
+
+* Curve fit (R²)
+* Similarity to the expected Zipf slope
+
+Higher scores indicate a stronger Zipf-like distribution.
+
+## Running Locally
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
->>>>>>> d8c3d5e (initial commit for deployment)
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Built With
+
+* React
+* TypeScript
+* Vite
+* Recharts
+* PapaParse
+
+## Why?
+
+Zipfy started as a weekend project to explore whether text and datasets could be compared using the same underlying statistical patterns.
+
+It turns out many systems are more "Zipfy" than you might expect.
